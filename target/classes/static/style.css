@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+    background-color: #f7550b;
+    padding: 40px;
+    
+}
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: white;
+    left: 0;
+    right: 0;
+    height: 7px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content:right;
+}
+.seller-heading, #customer-head {
+	display:flex;
+	justify-content:space-between;
+}
+
+* {
+	font-family: Arial, sans-serif;
+}
+
+p, h1, h2 {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 70px;
+        background-color: #ff7a3d;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+table{
+	 border-radius: 20px;
+  overflow: hidden;
+}
+
+label {
+	color: white;
+	font-weight:bold;
+}
+
+.custom-container {
+      max-width: 300px;
+    }
+    
+img {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.login-container {
+	display: flex;
+}
+
+#pdp-head{
+ display:flex;
+ justify-content:right;
+}
+#pdp-desc,#pdp-buy{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content:center;
+}
+#pdp-feature{
+	display:flex;
+	justify-content:center;
+}
+#pdp-desc,#pdp-image{
+	margin-left:50px;
+	margin-right:50px;
+}
+.pdp-container{
+	background: white;
+	border-radius: 20px;
+	display: flex;
+	justify-content:space-around;
+	padding: 20px;
+}
