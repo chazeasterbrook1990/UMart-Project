@@ -52,15 +52,14 @@
 				<tbody>
 					<c:forEach var="product" items="${product}">
 						<tr>
-							<td><a href="#"><c:out value="${product.sku}"></c:out></a></td>
-							<td><img src="data:image/png;base64,${imageBase64}"
-								style="max-width: 100px;"></td>
-							<td><c:out value="${product.title}"></c:out></td>
-							<td><c:out value="${product.quantity}"></c:out></td>
-							<td>$<c:out value="${product.price}"></c:out></td>
-							<td><a href="/umart/seller/product/${product.id}/edit"
+							<td class="align-middle"><a href="/umart/seller/product/${product.id}/edit"><c:out value="${product.sku}"></c:out></a></td>
+							<td class="align-middle"><img src="${product.imageUrl}"></td>
+							<td class="align-middle"><c:out value="${product.title}"></c:out></td>
+							<td class="align-middle"><c:out value="${product.quantity}"></c:out></td>
+							<td class="align-middle">$<c:out value="${product.price}"></c:out></td>
+							<td class="align-middle"><a href="/umart/seller/product/${product.id}/edit"
 								class="btn btn-primary">Edit</a></td>
-							<td><form:form
+							<td class="align-middle"><form:form
 									action="/umart/seller/product/${product.id}/delete"
 									method="POST" modelAttribute="deleteproduct">
 									<button type="submit" class="btn btn-warning">Delete</button>
